@@ -151,8 +151,11 @@ Public Class Payment
 
 
                     ' Right cell (PC CONFIG title)
-                    Dim baseFontPath As String = "C:\Users\vaisa\Downloads\OnlineWebFonts_COM_579f63f160bc040279b4436ec011a50d\Eurostile Unicase LT W04 Rg\Eurostile Unicase LT W04 Rg.ttf"
-                    Dim baseFont As BaseFont = BaseFont.CreateFont(baseFontPath, BaseFont.IDENTITY_H, BaseFont.EMBEDDED)
+                    Dim baseFont As BaseFont = BaseFont.CreateFont(
+                    BaseFont.HELVETICA,
+                    BaseFont.WINANSI,
+                    BaseFont.NOT_EMBEDDED
+                    )
                     Dim titleFont1 As New iTextSharp.text.Font(baseFont, 18, Font.Bold)
                     Dim titlePara As New Paragraph("PC CONFIG.", titleFont1)
                     titlePara.Alignment = Element.ALIGN_CENTER
