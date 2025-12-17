@@ -65,7 +65,7 @@ Public Class Form1
                 cmd.Parameters.AddWithValue("@adname", username)
                 cmd.Parameters.AddWithValue("@adpass", password)
                 cmd.Parameters.AddWithValue("@Username", username)
-                cmd.Parameters.AddWithValue("@Password", password
+                cmd.Parameters.AddWithValue("@Password", password)
 
                 conn.Open()
                 Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
